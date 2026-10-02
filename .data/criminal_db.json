@@ -1,0 +1,126 @@
+{
+  "users": [
+    {
+      "id": "dcb1d0c3-0ec6-4a97-88a1-ed35c852a08c",
+      "userId": "CRIM-114165",
+      "username": "dct_tester",
+      "email": "test@dct.com",
+      "password": "$2b$10$9CBZybygtdzWGo6F3IFozeT1F0lSr6maGJfn0nfjJJ4y3sNmdl3zu",
+      "apiKey": "crim_live_b1712503ddd8ecfbda7865d4d57c11eada4d",
+      "coinBalance": 24,
+      "status": "active",
+      "createdAt": "2026-10-02T17:28:13.171Z",
+      "totalRequests": 1,
+      "successfulRequests": 1,
+      "failedRequests": 0,
+      "lastUsedAt": "2026-10-02T17:28:13.769Z"
+    }
+  ],
+  "admins": [
+    {
+      "id": "fb252dfa-b624-4a46-818c-3a3682fecf35",
+      "username": "DCT_ChiefAdmin",
+      "email": "admin@criminal-api.dct",
+      "password": "$2b$10$OcdNC2YkUf3ldR2EQPoKReIb5OUr6ZWWZucqpLCdoJ0pYvdZYSRZK",
+      "role": "superadmin",
+      "createdAt": "2026-10-02T17:27:56.962Z"
+    }
+  ],
+  "apiKeys": [
+    {
+      "id": "27917070-4069-4ea4-8657-9803c35325ee",
+      "userId": "CRIM-114165",
+      "key": "crim_live_b1712503ddd8ecfbda7865d4d57c11eada4d",
+      "status": "active",
+      "name": "Default Primary Key",
+      "createdAt": "2026-10-02T17:28:13.171Z"
+    }
+  ],
+  "coinTransactions": [
+    {
+      "id": "78dcb4a0-2294-4bda-985f-b38effad437e",
+      "timestamp": "2026-10-02T17:28:13.769Z",
+      "userId": "CRIM-114165",
+      "username": "dct_tester",
+      "amount": 1,
+      "type": "DEBIT",
+      "reason": "API Call: /api/search (q=believer)",
+      "endpoint": "/api/search",
+      "balanceBefore": 25,
+      "balanceAfter": 24
+    },
+    {
+      "id": "b7f7da29-5c2c-4763-b6b2-5b7c159213c7",
+      "timestamp": "2026-10-02T17:28:13.172Z",
+      "userId": "CRIM-114165",
+      "username": "dct_tester",
+      "amount": 25,
+      "type": "CREDIT",
+      "reason": "Welcome Signup Bonus from DCT TEAM",
+      "balanceBefore": 0,
+      "balanceAfter": 25
+    }
+  ],
+  "apiRequests": [
+    {
+      "id": "174e88a8-0720-40fd-b3b4-4af572b471a6",
+      "requestTime": "2026-10-02T17:28:13.769Z",
+      "userId": "CRIM-114165",
+      "username": "dct_tester",
+      "apiKey": "crim_live_b1712503ddd8ecfbda7865d4d57c11eada4d",
+      "endpoint": "/api/search",
+      "responseStatus": 200,
+      "coinsCharged": 1,
+      "responseTime": 576,
+      "ip": "127.0.0.1",
+      "userAgent": "node",
+      "query": "believer",
+      "error": null
+    }
+  ],
+  "settings": {
+    "id": "global_settings",
+    "apiName": "🦋 CRIMINAL-API 🦋",
+    "apiVersion": "v1.4.0",
+    "poweredBy": "DCT TEAM",
+    "maintenanceMode": false,
+    "maintenanceMessage": "🦋 CRIMINAL-API is undergoing scheduled maintenance by DCT TEAM. Back shortly!",
+    "signupEnabled": true,
+    "defaultCoins": 25,
+    "rateLimitPerMinute": 60,
+    "endpoints": [
+      {
+        "endpoint": "/api/search",
+        "name": "Song Search API",
+        "description": "Search songs, tracks, artists, and audio metadata in real-time",
+        "cost": 1,
+        "enabled": true,
+        "method": "GET"
+      },
+      {
+        "endpoint": "/api/song",
+        "name": "Song Details & Stream API",
+        "description": "Get deep song metadata, lyrics, and direct playable audio stream URL",
+        "cost": 1,
+        "enabled": true,
+        "method": "GET"
+      },
+      {
+        "endpoint": "/api/download",
+        "name": "Song Audio Download API",
+        "description": "Generate high-speed direct audio download link (320kbps/256kbps audio format)",
+        "cost": 2,
+        "enabled": true,
+        "method": "GET"
+      },
+      {
+        "endpoint": "/api/health",
+        "name": "System Health & Metrics API",
+        "description": "Check uptime, status, database health and system version",
+        "cost": 0,
+        "enabled": true,
+        "method": "GET"
+      }
+    ]
+  }
+}

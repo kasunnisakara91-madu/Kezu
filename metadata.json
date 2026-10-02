@@ -1,0 +1,6 @@
+{
+  "name": "🦋 CRIMINAL-API 🦋",
+  "description": "High-performance music & song API platform powered by DCT TEAM with secure API keys, real coin credit billing, real-time analytics, and admin panel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
